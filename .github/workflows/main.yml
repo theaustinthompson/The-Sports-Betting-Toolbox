@@ -14,4 +14,4 @@ jobs:
         server: ftp.sportsbettingtoolbox.com
         username: sportsbetting
         password: Gluten.Free01
-        server-dir: sportsbettingtoolbox/
+        server-dir: public-html/
