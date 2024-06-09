@@ -6,7 +6,7 @@
     <title>Home Page</title>
     <meta name="description" content="Your go-to source for sports news, updates, and blogs.">
     <meta name="keywords" content="sports, news, blogs, football, basketball, baseball, hockey">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="austin">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Home Page">
