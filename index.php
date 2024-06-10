@@ -6,7 +6,7 @@
     <title>Home Page</title>
     <meta name="description" content="Your go-to source for sports news, updates, and blogs.">
     <meta name="keywords" content="sports, news, blogs, football, basketball, baseball, hockey">
-    <meta name="author" content="austin">
+    <meta name="author" content="Your Name">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Home Page">
@@ -19,6 +19,55 @@
     <meta name="twitter:title" content="Home Page">
     <meta name="twitter:description" content="Your go-to source for sports news, updates, and blogs.">
     <meta name="twitter:image" content="path_to_your_image.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sport Com",
+      "url": "http://www.sportcom.com",
+      "description": "Sport Com is your go-to source for sports news, updates, and blogs.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sport Com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://www.sportcom.com/logo.png",
+          "width": 200,
+          "height": 60
+        }
+      },
+      "image": "http://www.sportcom.com/hero-image.jpg",
+      "sameAs": [
+        "https://www.facebook.com/sportcom",
+        "https://www.twitter.com/sportcom",
+        "https://www.instagram.com/sportcom"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://www.sportcom.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://www.sportcom.com"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "http://www.yourwebsite.com"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Sports",
+        "url": "http://www.sportcom.com"
+      },
+      "inLanguage": "en-US",
+      "datePublished": "2024-06-09",
+      "dateModified": "2024-06-09"
+    }
+    </script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
