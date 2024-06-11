@@ -89,7 +89,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source src="hero-video.mp4" type="video/mp4">
+            <source src="video/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
@@ -97,17 +97,18 @@
     <!-- Navigation Menu -->
     <nav>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
             <li><a href="#">Football</a></li>
             <li><a href="#">Basketball</a></li>
             <li><a href="#">Baseball</a></li>
             <li><a href="#">Hockey</a></li>
+            <li><a href="#">MMA</a></li>
             <li><a href="#">More Sports</a>
                 <ul class="dropdown">
                     <li><a href="#">Tennis</a></li>
                     <li><a href="#">Golf</a></li>
                     <li><a href="#">Soccer</a></li>
                     <li><a href="#">Rugby</a></li>
+            <li><a href="#">Fantasy Sports</a>
                 </ul>
             </li>
         </ul>
@@ -131,7 +132,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> Your Website. All Rights Reserved.</p>
+        <p>&copy; <?php echo date("Y"); ?> Thompson Industries. All Rights Reserved.</p>
     </footer>
 
     <style>
