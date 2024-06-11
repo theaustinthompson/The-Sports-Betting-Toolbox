@@ -40,9 +40,9 @@
       },
       "image": "http://www.sportcom.com/hero-image.jpg",
       "sameAs": [
-        "https://www.facebook.com/sportcom",
-        "https://www.twitter.com/sportcom",
-        "https://www.instagram.com/sportcom"
+        "https://www.facebook.com/BettingToolbox",
+        "https://www.twitter.com/BettingToolbox",
+        "https://www.instagram.com/BettingToolbox"
       ],
       "potentialAction": {
         "@type": "SearchAction",
