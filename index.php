@@ -12,7 +12,7 @@
     <meta property="og:title" content="Home Page">
     <meta property="og:description" content="Your go-to source for sports news, updates, and blogs.">
     <meta property="og:image" content="path_to_your_image.jpg">
-    <meta property="og:url" content="http://yourwebsite.com">
+    <meta property="og:url" content="https://www.sportsbettingtoolbox.com/">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -79,9 +79,9 @@
                 <a href="index.php"><img src="logo.png" alt="Logo"></a>
             </div>
             <div class="social-media">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com/BettingToolbox" target="_blank">Facebook</a>
+                <a href="https://twitter.com/BettingToolbox" target="_blank">Twitter</a>
+                <a href="https://instagram.com/BettingToolbox" target="_blank">Instagram</a>
             </div>
         </div>
     </header>
@@ -89,7 +89,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source src="video/hero-video.mp4" type="video/mp4">
+            <source src="hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
