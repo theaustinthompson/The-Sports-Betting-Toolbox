@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,7 +90,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source src="hero-video.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
@@ -107,7 +108,7 @@
                     <li><a href="#">Tennis</a></li>
                     <li><a href="#">Golf</a></li>
                     <li><a href="#">Soccer</a></li>
-                    <li><a href="#">Rugby</a></li>
+                    <li><a href="#">Lacrosse</a></li>
             <li><a href="#">Fantasy Sports</a>
                 </ul>
             </li>
