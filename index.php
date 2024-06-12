@@ -87,13 +87,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <video autoplay muted loop id="hero-video">
-            <source src="video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
 
     <!-- Navigation Menu -->
     <nav>
@@ -103,13 +96,13 @@
             <li><a href="#">Baseball</a></li>
             <li><a href="#">Hockey</a></li>
             <li><a href="#">MMA</a></li>
+            <li><a href="#">Fantasy Sports</a>
             <li><a href="#">More Sports</a>
                 <ul class="dropdown">
                     <li><a href="#">Tennis</a></li>
                     <li><a href="#">Golf</a></li>
                     <li><a href="#">Soccer</a></li>
                     <li><a href="#">Lacrosse</a></li>
-            <li><a href="#">Fantasy Sports</a>
                 </ul>
             </li>
         </ul>
@@ -117,6 +110,28 @@
 
     <!-- Blog Content Section -->
     <section class="blog-content">
+        <div class="blog-header">
+            <h2>Latest Blog Posts</h2>
+        </div>
+        <div class="blog-posts">
+            <!-- Future blog posts will go here -->
+            <article class="blog-post">
+                <h3>Blog Post Title</h3>
+                <p>Excerpt of the blog post...</p>
+                <a href="#">Read More</a>
+            </article>
+             <section class="blog-content">
+        <div class="blog-header">
+            <h2>Latest Blog Posts</h2>
+        </div>
+        <div class="blog-posts">
+            <!-- Future blog posts will go here -->
+            <article class="blog-post">
+                <h3>Blog Post Title</h3>
+                <p>Excerpt of the blog post...</p>
+                <a href="#">Read More</a>
+            </article>
+             <section class="blog-content">
         <div class="blog-header">
             <h2>Latest Blog Posts</h2>
         </div>
@@ -136,91 +151,6 @@
         <p>&copy; <?php echo date("Y"); ?> Thompson Industries. All Rights Reserved.</p>
     </footer>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-        }
-        .logo img {
-            height: 50px;
-        }
-        .social-media a {
-            margin-left: 20px;
-            color: #fff;
-            text-decoration: none;
-        }
-        .hero {
-            position: relative;
-            height: 60vh;
-            overflow: hidden;
-        }
-        #hero-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            background-color: #444;
-        }
-        .menu li {
-            display: inline;
-            position: relative;
-        }
-        .menu a {
-            display: inline-block;
-            padding: 15px 20px;
-            color: #fff;
-            text-decoration: none;
-        }
-        .menu .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #555;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .menu li:hover .dropdown {
-            display: block;
-        }
-        .dropdown li {
-            display: block;
-        }
-        .blog-content {
-            padding: 20px;
-        }
-        .blog-header h2 {
-            margin: 0 0 20px 0;
-        }
-        .blog-post {
-            margin-bottom: 20px;
-        }
-        .blog-post h3 {
-            margin: 0 0 10px 0;
-        }
-        .blog-post p {
-            margin: 0 0 10px 0;
-        }
-        footer {
-            padding: 10px;
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-        }
     </style>
 </body>
 </html>
