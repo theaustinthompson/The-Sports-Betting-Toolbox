@@ -12,7 +12,7 @@
     <meta property="og:title" content="Home Page">
     <meta property="og:description" content="Your go-to source for sports news, updates, and blogs.">
     <meta property="og:image" content="path_to_your_image.jpg">
-    <meta property="og:url" content="http://yourwebsite.com">
+    <meta property="og:url" content="https://www.sportsbettingtoolbox.com/">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -26,19 +26,19 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Sport Com",
-      "url": "http://www.sportcom.com",
+      "url": "https://www.sportsbettingtoolbox.com/",
       "description": "Sport Com is your go-to source for sports news, updates, and blogs.",
       "publisher": {
         "@type": "Organization",
         "name": "Sport Com",
         "logo": {
           "@type": "ImageObject",
-          "url": "http://www.sportcom.com/logo.png",
+          "url": "https://www.sportsbettingtoolbox.com//logo.png",
           "width": 200,
           "height": 60
         }
       },
-      "image": "http://www.sportcom.com/hero-image.jpg",
+      "image": "https://www.sportsbettingtoolbox.com//hero-image.jpg",
       "sameAs": [
         "https://www.facebook.com/sportcom",
         "https://www.twitter.com/sportcom",
@@ -46,12 +46,12 @@
       ],
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "http://www.sportcom.com/search?q={search_term_string}",
+        "target": "https://www.sportsbettingtoolbox.com//search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://www.sportcom.com"
+        "@id": "https://www.sportsbettingtoolbox.com/"
       },
       "author": {
         "@type": "Person",
@@ -61,7 +61,7 @@
       "about": {
         "@type": "Thing",
         "name": "Sports",
-        "url": "http://www.sportcom.com"
+        "url": "https://www.sportsbettingtoolbox.com/"
       },
       "inLanguage": "en-US",
       "datePublished": "2024-06-09",
@@ -79,9 +79,9 @@
                 <a href="index.php"><img src="logo.png" alt="Logo"></a>
             </div>
             <div class="social-media">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com/bettingtoolbox" target="_blank">Facebook</a>
+                <a href="https://twitter.com/bettingtoolbox" target="_blank">Twitter</a>
+                <a href="https://instagram.com/bettingtoolbox" target="_blank">Instagram</a>
             </div>
         </div>
     </header>
@@ -97,7 +97,6 @@
     <!-- Navigation Menu -->
     <nav>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
             <li><a href="#">Football</a></li>
             <li><a href="#">Basketball</a></li>
             <li><a href="#">Baseball</a></li>
@@ -131,7 +130,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> Your Website. All Rights Reserved.</p>
+        <p>&copy; <?php echo date("Y"); ?> Thompson Industries. All Rights Reserved.</p>
     </footer>
 
     <style>
