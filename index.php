@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <meta name="description" content="Your go-to source for sports news, updates, and blogs.">
-    <meta name="keywords" content="sports, news, blogs, football, basketball, baseball, hockey">
-    <meta name="author" content="Your Name">
+    <title>Sports Betting Toolbox | Built for #TheCrew</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Austin Thompson">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Home Page">
