@@ -76,7 +76,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.php"><img src="Sports Betting Toolbox Logo - 320 x 111.png" alt="Logo"></a>
+                <a href="index.php"><img src="images/Sports Betting Toolbox Logo - 320 x 111.png" alt="Logo"></a>
             </div>
             <div class="social-media">
                 <a href="https://facebook.com/bettingtoolbox" target="_blank">Facebook</a>
