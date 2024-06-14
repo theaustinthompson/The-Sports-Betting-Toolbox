@@ -71,7 +71,9 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+    
 <body>
+    
     <!-- Header Section -->
     <header>
         <div class="header-container">
@@ -98,15 +100,26 @@
     <nav>
         <ul class="menu">
             <li><a href="#">Football</a></li>
+            <ul class="dropdown">
+                    <li><a href="#">MMA</a></li>
+                    <li><a href="#">Lacrosse</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
             <li><a href="#">Basketball</a></li>
+                <ul class="dropdown">
+                    <li><a href="#">MMA</a></li>
+                    <li><a href="#">Lacrosse</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
             <li><a href="#">Baseball</a></li>
             <li><a href="#">Hockey</a></li>
+            <li><a href="#">Soccer</a></li>
             <li><a href="#">More Sports</a>
                 <ul class="dropdown">
-                    <li><a href="#">Tennis</a></li>
-                    <li><a href="#">Golf</a></li>
-                    <li><a href="#">Soccer</a></li>
-                    <li><a href="#">Rugby</a></li>
+                    <li><a href="#">MMA</a></li>
+                    <li><a href="#">Lacrosse</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </li>
         </ul>
