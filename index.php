@@ -91,7 +91,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source src="/video/video.mp4" type="video/mp4">
+            <source src="/video/video1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
@@ -106,11 +106,6 @@
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
             <li><a href="#">Basketball</a></li>
-                <ul class="dropdown">
-                    <li><a href="#">MMA</a></li>
-                    <li><a href="#">Lacrosse</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
             <li><a href="#">Baseball</a></li>
             <li><a href="#">Hockey</a></li>
             <li><a href="#">Soccer</a></li>
