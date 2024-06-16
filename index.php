@@ -6,19 +6,19 @@
     <title>Sports Betting Toolbox</title>
     <meta name="description" content="Your go-to source for sports betting news, updates, and blogs.">
     <meta name="keywords" content="sports betting, news, blogs, football, basketball, baseball, hockey">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Austin Thompson">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sports Betting Toolbox">
     <meta property="og:description" content="Your go-to source for sports betting news, updates, and blogs.">
-    <meta property="og:image" content="path_to_your_image.jpg">
+    <meta property="og:image" content="images/hero-image.jpg">
     <meta property="og:url" content="https://www.sportsbettingtoolbox.com">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sports Betting Toolbox">
     <meta name="twitter:description" content="Your go-to source for sports betting news, updates, and blogs.">
-    <meta name="twitter:image" content="path_to_your_image.jpg">
+    <meta name="twitter:image" content="images/hero-image.jpg">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -33,16 +33,16 @@
         "name": "Sports Betting Toolbox",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.sportsbettingtoolbox.com/logo.png",
+          "url": "images/logo.png",
           "width": 200,
           "height": 60
         }
       },
-      "image": "https://www.sportsbettingtoolbox.com/hero-image.jpg",
+      "image": "images/hero-image.jpg",
       "sameAs": [
-        "https://www.facebook.com/sportsbettingtoolbox",
-        "https://www.twitter.com/sportsbettingtoolbox",
-        "https://www.instagram.com/sportsbettingtoolbox"
+        "https://www.facebook.com/BettingToolbox",
+        "https://www.twitter.com/BettingToolbox",
+        "https://www.instagram.com/BettingToolbox"
       ],
       "potentialAction": {
         "@type": "SearchAction",
@@ -55,8 +55,8 @@
       },
       "author": {
         "@type": "Person",
-        "name": "Your Name",
-        "url": "http://www.yourwebsite.com"
+        "name": "Austin Thompson",
+        "url": "https://www.twitter.com/NotReallyAustin"
       },
       "about": {
         "@type": "Thing",
@@ -74,10 +74,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var videos = [
-                '/video/video1.mp4',
-                '/video/video2.mp4',
-                '/video/video3.mp4',
-                '/video/video4.mp4'
+                'video/video1.mp4',
+                'video/video2.mp4',
+                'video/video3.mp4',
+                'video/video4.mp4'
             ];
             var randomVideo = videos[Math.floor(Math.random() * videos.length)];
             document.getElementById('hero-video-source').src = randomVideo;
@@ -90,12 +90,12 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.php"><img src="logo.png" alt="Logo"></a>
+                <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
             </div>
             <div class="social-media">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/BettingToolbox" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/BettingToolbox" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/BettingToolbox" target="_blank">Instagram</a>
             </div>
         </div>
     </header>
@@ -103,7 +103,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source id="hero-video-source" src="/video/video.mp4" type="video/mp4">
+            <source id="hero-video-source" src="video/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
