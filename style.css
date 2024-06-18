@@ -18,6 +18,7 @@ body {
     margin-left: 20px;
     color: #fff;
     text-decoration: none;
+    font-size: 1.5em;
 }
 .hero {
     position: relative;
@@ -34,9 +35,10 @@ body {
     padding: 0;
     margin: 0;
     background-color: #444;
+    display: flex;
+    justify-content: center;
 }
 .menu li {
-    display: inline;
     position: relative;
 }
 .menu a {
@@ -60,6 +62,17 @@ body {
 }
 .dropdown li {
     display: block;
+}
+.stylized-bar {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+.stylized-bar p {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
 }
 .blog-content {
     padding: 20px;
