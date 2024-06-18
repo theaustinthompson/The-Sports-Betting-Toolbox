@@ -129,10 +129,8 @@
         </video>
     </section>
 
-    <!-- Stylized Bar -->
-    <section class="stylized-bar">
-        <p><strong>Our Content</strong></p>
-    </section>
+    <!-- Divider Line -->
+    <hr class="divider-line">
 
     <!-- Blog Content Section -->
     <section class="blog-content">
@@ -140,13 +138,32 @@
             <h2>Latest Blog Posts</h2>
         </div>
         <div class="blog-posts">
-            <!-- Future blog posts will go here -->
-            <article class="blog-post">
-                <h3>Blog Post Title</h3>
-                <p>Excerpt of the blog post...</p>
-                <a href="#">Read More</a>
-            </article>
-            <!-- Repeat above block for more blog posts -->
+            <?php
+            $blogDir = 'blog/';
+            $blogFiles = array_diff(scandir($blogDir), array('.', '..'));
+
+            foreach ($blogFiles as $blogFile) {
+                $filePath = $blogDir . $blogFile;
+                if (is_file($filePath)) {
+                    $fileName = pathinfo($filePath, PATHINFO_FILENAME);
+                    $fileContent = file_get_contents($filePath);
+
+                    preg_match('/<title>(.*?)<\/title>/', $fileContent, $titleMatches);
+                    preg_match('/<meta name="subject" content="(.*?)">/', $fileContent, $subjectMatches);
+                    preg_match('/<meta name="hero-image" content="(.*?)">/', $fileContent, $heroMatches);
+
+                    $title = $titleMatches[1] ?? $fileName;
+                    $subject = $subjectMatches[1] ?? 'General';
+                    $heroImage = $heroMatches[1] ?? 'images/hero-image.jpg';
+                    
+                    echo '<article class="blog-post">';
+                    echo '<img src="' . $heroImage . '" alt="' . $title . '">';
+                    echo '<h3><a href="' . $filePath . '">' . $title . '</a></h3>';
+                    echo '<p>Category: ' . $subject . '</p>';
+                    echo '</article>';
+                }
+            }
+            ?>
         </div>
     </section>
 
