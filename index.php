@@ -20,8 +20,8 @@
     <meta name="twitter:description" content="Your go-to source for sports betting news, updates, and blogs.">
     <meta name="twitter:image" content="images/hero-image.jpg">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -89,59 +89,18 @@
     </script>
 </head>
 <body>
-    <!-- Header and Navigation Section -->
+    <!-- Header Section -->
     <header>
         <div class="header-container">
             <div class="logo">
                 <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
             </div>
             <div class="social-media">
-                <a href="https://www.facebook.com/BettingToolbox" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com/BettingToolbox" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/BettingToolbox" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/BettingToolbox" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/BettingToolbox" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/BettingToolbox" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Football</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Basketball</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Baseball</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Hockey</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">More Sports</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Tennis</a></li>
-                        <li><a href="#">Golf</a></li>
-                        <li><a href="#">Soccer</a></li>
-                        <li><a href="#">Rugby</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -152,7 +111,24 @@
         </video>
     </section>
 
-    <hr>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Hockey</a></li>
+            <li><a href="#">More Sports</a>
+                <ul class="dropdown">
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Soccer</a></li>
+                    <li><a href="#">Rugby</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Blog Content Section -->
     <section class="blog-content">
