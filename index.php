@@ -101,6 +101,24 @@
                 <a href="https://www.instagram.com/BettingToolbox" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Football</a></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Baseball</a></li>
+                <li><a href="#">Hockey</a></li>
+                <li><a href="#">More Sports</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Golf</a></li>
+                        <li><a href="#">Soccer</a></li>
+                        <li><a href="#">Rugby</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -111,24 +129,10 @@
         </video>
     </section>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Football</a></li>
-            <li><a href="#">Basketball</a></li>
-            <li><a href="#">Baseball</a></li>
-            <li><a href="#">Hockey</a></li>
-            <li><a href="#">More Sports</a>
-                <ul class="dropdown">
-                    <li><a href="#">Tennis</a></li>
-                    <li><a href="#">Golf</a></li>
-                    <li><a href="#">Soccer</a></li>
-                    <li><a href="#">Rugby</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <!-- Stylized Bar -->
+    <section class="stylized-bar">
+        <p><strong>Our Content</strong></p>
+    </section>
 
     <!-- Blog Content Section -->
     <section class="blog-content">
