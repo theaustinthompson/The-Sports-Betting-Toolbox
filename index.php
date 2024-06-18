@@ -4,88 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Betting Toolbox</title>
-    <meta name="description" content="Your go-to source for sports betting news, updates, and blogs.">
-    <meta name="keywords" content="sports betting, news, blogs, football, basketball, baseball, hockey">
+    <meta name="description" content="Your go-to resource for sports betting tips and tools.">
+    <meta name="keywords" content="sports, betting, toolbox, tips, tools">
     <meta name="author" content="Austin Thompson">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Sports Betting Toolbox">
-    <meta property="og:description" content="Your go-to source for sports betting news, updates, and blogs.">
-    <meta property="og:image" content="images/hero-image.jpg">
-    <meta property="og:url" content="https://www.sportsbettingtoolbox.com">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sports Betting Toolbox">
-    <meta name="twitter:description" content="Your go-to source for sports betting news, updates, and blogs.">
-    <meta name="twitter:image" content="images/hero-image.jpg">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Sports Betting Toolbox",
-      "url": "https://www.sportsbettingtoolbox.com",
-      "description": "Sports Betting Toolbox is your go-to source for sports betting news, updates, and blogs.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Sports Betting Toolbox",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "images/logo.png",
-          "width": 200,
-          "height": 60
-        }
-      },
-      "image": "images/hero-image.jpg",
-      "sameAs": [
-        "https://www.facebook.com/BettingToolbox",
-        "https://www.twitter.com/BettingToolbox",
-        "https://www.instagram.com/BettingToolbox"
-      ],
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.sportsbettingtoolbox.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.sportsbettingtoolbox.com"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Austin Thompson",
-        "url": "https://www.twitter.com/NotReallyAustin"
-      },
-      "about": {
-        "@type": "Thing",
-        "name": "Sports Betting",
-        "url": "https://www.sportsbettingtoolbox.com"
-      },
-      "inLanguage": "en-US",
-      "datePublished": "2024-06-09",
-      "dateModified": "2024-06-09"
-    }
-    </script>
-
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var videos = [
-                'video/video1.mp4',
-                'video/video2.mp4',
-                'video/video3.mp4',
-                'video/video4.mp4'
-            ];
+        window.onload = function() {
+            var videoElement = document.getElementById('hero-video');
+            var videos = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4'];
             var randomVideo = videos[Math.floor(Math.random() * videos.length)];
-            document.getElementById('hero-video-source').src = randomVideo;
-            document.getElementById('hero-video').load();
-        });
+            videoElement.src = 'video/' + randomVideo;
+        };
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Subject', 'Count'],
+                <?php
+                $blogDirectory = 'blog/';
+                $blogFiles = glob($blogDirectory . '*.html');
+                $subjects = [];
+                foreach ($blogFiles as $file) {
+                    $content = file_get_contents($file);
+                    preg_match('/<meta name="subject" content="(.*?)">/', $content, $subjectMatches);
+                    $subject = $subjectMatches[1];
+                    if (!isset($subjects[$subject])) {
+                        $subjects[$subject] = 0;
+                    }
+                    $subjects[$subject]++;
+                }
+                foreach ($subjects as $subject => $count) {
+                    echo "['$subject', $count],";
+                }
+                ?>
+            ]);
+
+            var options = {
+                title: 'Blog Post Subjects',
+                pieHole: 0.4,
+                backgroundColor: '#f9f9f9',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
     </script>
 </head>
 <body>
@@ -104,19 +71,12 @@
         <!-- Navigation Menu -->
         <nav>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Football</a></li>
-                <li><a href="#">Basketball</a></li>
-                <li><a href="#">Baseball</a></li>
-                <li><a href="#">Hockey</a></li>
-                <li><a href="#">More Sports</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Tennis</a></li>
-                        <li><a href="#">Golf</a></li>
-                        <li><a href="#">Soccer</a></li>
-                        <li><a href="#">Rugby</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.php#">Football</a></li>
+                <li><a href="index.php#">Basketball</a></li>
+                <li><a href="index.php#">Baseball</a></li>
+                <li><a href="index.php#">Hockey</a></li>
+                <li><a href="index.php#">Fantasy Sports</a></li>
+                <li><a href="index.php#">Sports Betting</a></li>
             </ul>
         </nav>
     </header>
@@ -124,7 +84,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <video autoplay muted loop id="hero-video">
-            <source id="hero-video-source" src="video/video.mp4" type="video/mp4">
+            <source src="video/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
@@ -132,39 +92,37 @@
     <!-- Divider Line -->
     <hr class="divider-line">
 
-    <!-- Blog Content Section -->
-    <section class="blog-content">
+    <!-- Blog Section -->
+    <section class="blog">
         <div class="blog-header">
             <h2>Latest Blog Posts</h2>
         </div>
         <div class="blog-posts">
             <?php
-            $blogDir = 'blog/';
-            $blogFiles = array_diff(scandir($blogDir), array('.', '..'));
-
-            foreach ($blogFiles as $blogFile) {
-                $filePath = $blogDir . $blogFile;
-                if (is_file($filePath)) {
-                    $fileName = pathinfo($filePath, PATHINFO_FILENAME);
-                    $fileContent = file_get_contents($filePath);
-
-                    preg_match('/<title>(.*?)<\/title>/', $fileContent, $titleMatches);
-                    preg_match('/<meta name="subject" content="(.*?)">/', $fileContent, $subjectMatches);
-                    preg_match('/<meta name="hero-image" content="(.*?)">/', $fileContent, $heroMatches);
-
-                    $title = $titleMatches[1] ?? $fileName;
-                    $subject = $subjectMatches[1] ?? 'General';
-                    $heroImage = $heroMatches[1] ?? 'images/hero-image.jpg';
-                    
-                    echo '<article class="blog-post">';
-                    echo '<img src="' . $heroImage . '" alt="' . $title . '">';
-                    echo '<h3><a href="' . $filePath . '">' . $title . '</a></h3>';
-                    echo '<p>Category: ' . $subject . '</p>';
-                    echo '</article>';
-                }
+            $blogDirectory = 'blog/';
+            $blogFiles = glob($blogDirectory . '*.html');
+            foreach ($blogFiles as $file) {
+                $content = file_get_contents($file);
+                preg_match('/<title>(.*?)<\/title>/', $content, $titleMatches);
+                preg_match('/<meta name="subject" content="(.*?)">/', $content, $subjectMatches);
+                preg_match('/<meta name="hero-image" content="(.*?)">/', $content, $imageMatches);
+                $title = $titleMatches[1];
+                $subject = $subjectMatches[1];
+                $image = $imageMatches[1];
+                $filename = basename($file, '.html');
+                echo "<div class='blog-post'>";
+                echo "<img src='$image' alt='$title'>";
+                echo "<h3><a href='$file'>$title</a></h3>";
+                echo "<p>Category: $subject</p>";
+                echo "</div>";
             }
             ?>
         </div>
+    </section>
+
+    <!-- Donut Chart Section -->
+    <section id="chart-section">
+        <div id="donutchart" style="width: 900px; height: 500px; margin: auto;"></div>
     </section>
 
     <!-- Footer Section -->
