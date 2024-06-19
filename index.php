@@ -44,7 +44,8 @@
                 title: 'Blog Post Subjects',
                 pieHole: 0.4,
                 backgroundColor: '#f9f9f9',
-                legend: { position: 'bottom' }
+                legend: { position: 'bottom' },
+                chartArea: { width: '100%', height: '75%' }
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -67,10 +68,13 @@
                 <a href="https://www.twitter.com/BettingToolbox" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/BettingToolbox" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
         <!-- Navigation Menu -->
-        <nav>
-            <ul class="menu">
+        <nav class="menu">
+            <ul>
                 <li><a href="index.php#">Football</a></li>
                 <li><a href="index.php#">Basketball</a></li>
                 <li><a href="index.php#">Baseball</a></li>
@@ -122,12 +126,18 @@
 
     <!-- Donut Chart Section -->
     <section id="chart-section">
-        <div id="donutchart" style="width: 900px; height: 500px; margin: auto;"></div>
+        <div id="donutchart" style="width: 100%; height: 500px; margin: auto;"></div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; <?php echo date("Y"); ?> Sports Betting Toolbox. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav.menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
