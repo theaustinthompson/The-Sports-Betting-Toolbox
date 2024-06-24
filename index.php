@@ -9,7 +9,6 @@
     <meta name="author" content="Austin Thompson">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
         window.onload = function() {
             var videoElement = document.getElementById('hero-video');
@@ -17,45 +16,6 @@
             var randomVideo = videos[Math.floor(Math.random() * videos.length)];
             videoElement.src = 'video/' + randomVideo;
         };
-
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Subject', 'Count'],
-                <?php
-                $blogDirectory = 'blog/';
-                $blogFiles = glob($blogDirectory . '*.html');
-                $subjects = [];
-                foreach ($blogFiles as $file) {
-                    $content = file_get_contents($file);
-                    preg_match('/<meta name="subject" content="(.*?)">/', $content, $subjectMatches);
-                    $subject = $subjectMatches[1];
-                    if (!isset($subjects[$subject])) {
-                        $subjects[$subject] = 0;
-                    }
-                    $subjects[$subject]++;
-                }
-                foreach ($subjects as $subject => $count) {
-                    echo "['$subject', $count],";
-                }
-                ?>
-            ]);
-
-            var options = {
-                title: 'Blog Post Subjects',
-                pieHole: 0.4,
-                backgroundColor: '#f9f9f9',
-                legend: { position: 'bottom' },
-                chartArea: { width: '100%', height: '75%' }
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-            chart.draw(data, options);
-        }
-
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        window.addEventListener('resize', drawChart);
     </script>
 </head>
 <body>
@@ -70,13 +30,10 @@
                 <a href="https://www.twitter.com/BettingToolbox" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/BettingToolbox" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
         <!-- Navigation Menu -->
-        <nav class="menu">
-            <ul>
+        <nav>
+            <ul class="menu">
                 <li><a href="index.php#">Football</a></li>
                 <li><a href="index.php#">Basketball</a></li>
                 <li><a href="index.php#">Baseball</a></li>
@@ -126,20 +83,9 @@
         </div>
     </section>
 
-    <!-- Donut Chart Section -->
-    <section id="chart-section">
-        <div id="donutchart" style="width: 100%; height: 500px; margin: auto;"></div>
-    </section>
-
     <!-- Footer Section -->
     <footer>
         <p>&copy; <?php echo date("Y"); ?> Sports Betting Toolbox. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav.menu').classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
