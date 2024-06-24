@@ -137,6 +137,12 @@ footer {
     color: #fff;
 }
 
+#chart-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -166,5 +172,10 @@ footer {
     .blog-post img {
         width: 100%;
         height: auto;
+    }
+
+    #donutchart {
+        width: 100%;
+        height: 300px;
     }
 }
