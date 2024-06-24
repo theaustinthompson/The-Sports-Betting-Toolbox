@@ -54,6 +54,8 @@
 
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
+
+        window.addEventListener('resize', drawChart);
     </script>
 </head>
 <body>
